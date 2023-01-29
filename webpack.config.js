@@ -6,12 +6,12 @@ module.exports = {
     entry: './src/index',
     output: {
         filename: 'main.js',
-        path: path.resolve('./dist'),
+        path: path.resolve('./docs'),
     },
     mode: 'development',
     devServer: {
         historyApiFallback: true,
-        static: path.resolve(__dirname, './dist'),
+        static: path.resolve(__dirname, './docs'),
         open: true,
         compress: true,
         hot: true,
